@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.singlescreen.MainActivity"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:padding="15dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:id="@+id/header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_msg"
+        android:layout_below="@id/header"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/welcome_msg"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/welcome_msg"
+        android:id="@+id/line2"
+        android:background="@color/lines"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/donut_image"
+        android:src="@drawable/pinkdonut"
+        android:layout_below="@id/line2"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/donut_image"
+        android:id="@+id/line"
+        android:background="@color/lines"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/line"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/adress"
+            style="@style/TextViewStyleBottom"
+            android:text="@string/adress"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/hours"
+            style="@style/TextViewStyleBottom"
+            android:text="@string/hours"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>

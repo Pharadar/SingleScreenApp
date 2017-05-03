@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SingleScreenApp</string>
+    <string name="welcome_msg">Our donuts are filled with passion!</string>
+    <string name="adress">Come to us: \n1 Infinite Loop \nCupertino \nCA 95014</string>>
+    <string name="hours">Opening hours: \nEvery day 9 am - Midnight</string>
+    <string name="header">Diet Donut</string>
+</resources>
